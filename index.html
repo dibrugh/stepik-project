@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Coffe House</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            <header class="header">
+                <p class="title">coffe house</p>
+            </header>
+        </div>
+
+        <div class="wrapper__main">
+            <main class="main">
+                <div class="main__form">
+                    <div class="main__form_bio">
+                        <label for="surname"></label>
+                        <input type="text" id="surname" placeholder="Введите Фамилию">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Введите Имя">
+                    </div>
+                    <div class="main__form_goods">
+                        <div class="option">
+                            <div class="checkbox">
+                                <input type="checkbox" id="espresso" name="goods" value="0" data-cost="80">
+                                <label for="espresso">Эспрессо</label>
+                            </div>
+                            <input type="number" id="goodsCount" value="0">
+                        </div>
+                        <div class="option">
+                            <div class="checkbox">
+                                <input type="checkbox" id="americano" name="goods" value="0" data-cost="110">
+                                <label for="americano">Американо</label>
+                            </div>
+                            <input type="number" id="goodsCount" value="0">
+                        </div>
+                        <div class="option">
+                            <div class="checkbox">
+                                <input type="checkbox" id="latte" name="goods" value="0" data-cost="120">
+                                <label for="latte">Латте</label>
+                            </div>
+                            <input type="number" id="goodsCount" value="0">
+                        </div>
+                        <div class="option">
+                            <div class="checkbox">
+                                <input type="checkbox" id="capuccino" name="goods" value="0" data-cost="90">
+                                <label for="capuccino">Капучино</label>
+                            </div>
+                            <input type="number" id="goodsCount" value="0">
+                        </div>
+                        <div class="option">
+                            <div class="checkbox">
+                                <input type="checkbox" id="c-cake" name="goods" value="0" data-cost="80">
+                                <label for="c-cake">Шоколадный кекс</label>
+                            </div>
+                            <input type="number" id="goodsCount" value="0">
+                        </div>
+                        <div class="option">
+                            <div class="checkbox">
+                                <input type="checkbox" id="b-cake" name="goods" value="0" data-cost="90">
+                                <label for="b-cake">Черничный кекс</label>
+
+                            </div>
+                            <input type="number" id="goodsCount" value="0">
+                        </div>
+                        <div class="option">
+                            <div class="checkbox">
+                                <input type="checkbox" id="tart" name="goods" value="0" data-cost="100">
+                                <label for="tart">Яблочный тарт</label>
+
+                            </div>
+                            <input type="number" id="goodsCount" value="0">
+                        </div>
+
+                    </div>
+                    <div class="result">
+                        <p class="result__text">Итого: <span class="result__text_js"></span></p>
+                        <button class="btn">Оформить заказ</button>
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
